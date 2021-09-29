@@ -1,0 +1,23 @@
+[package]
+name = "isexec"
+description = "determine whether the file behind a given path is a valid executable"
+license  = "MIT OR Apache-2.0"
+
+version = "0.1.0-dev"
+edition = "2018"
+
+authors = ["Fabio Valentini <decathorpe@gmail.com>"]
+readme = "README.md"
+exclude = ["/rustfmt.toml"]
+categories = ["command-line-utilities"]
+#keywords = [""]
+repository = "https://github.com/ironthree/isexec"
+
+[dependencies]
+
+[features]
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
